@@ -45,4 +45,9 @@ The dataset has not been publicly released yet. I will upload it once it becomes
 
 ## Codes Structure
 
-The dataset was initially analyzed using [**Descriptive Statistics**](https://github.com/javadho/lattice-design-compression/blob/main/Descriptive%20Statistics.ipynb) to understand its structure and key characteristics. This included summarizing the data, checking for missing values, and generating summary statistics. Visualizations such as histograms, box plots, scatter plots, and correlation heatmaps were created to examine distributions, relationships, and potential outliers. Rank-Based Inverse Normal (RIN) transformation was used to normalize numerical variables. The scatter plots and correlation heatmaps revealed slight correlations between force and Z, and a strong link between force and thickness. The box plots indicated that the lattice type variable is mostly independent of other variables, though there may be a very low relationship between lattice type and thickness.
+### Descriptive Statistics
+The dataset was initially analyzed using [**Descriptive Statistics**](https://github.com/javadho/lattice-design-compression/blob/main/Descriptive%20Statistics.ipynb) to understand its structure and key characteristics. This included summarizing the data, checking for missing values, and generating summary statistics. Visualizations such as histograms, box plots, scatter plots, and correlation heatmaps were created to examine distributions, relationships, and potential outliers. Rank-Based Inverse Normal (RIN) transformation was used to normalize numerical variables. The scatter plots and correlation heatmaps revealed slight correlations between force and Z, and a strong link between force and thickness, and force and strain. The box plots indicated that the lattice type variable is mostly independent of other variables, though there may be a very low relationship between lattice type and thickness.
+
+### Prediction Models
+
+
