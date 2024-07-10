@@ -24,9 +24,13 @@ The project aims to develop a machine learning model that can predict the optima
 ### Software Requirement
 The codes were written with JupyterNotebook IPython 7.31.1 environment and Python programming language version 3.9.13. They were executed on a system setup comprising an 11th Generation Intel® Core™ i5 CPU with four cores and a clock speed of 2.40 GHz, together with 8.00 GB of RAM, operating on the Microsoft Windows 11 Home OS.
 
-To implement the code and obtain the models for this project, ensure you have installed the necessary packages. Initially, descriptive statistics were implemented to understand the dataset and determine methods for achieving better modeling results. To begin, install the required packages by running the following command for the ["Descriptive Statistics"](https://github.com/javadho/lattice-design-compression/blob/main/Descriptive%20Statistics.ipynb) file:
+To implement the code and obtain the models for this project, ensure you have installed the necessary packages. Initially, descriptive statistics were implemented to understand the dataset and determine methods for achieving better modeling results. To begin, install the required packages by running the following command for the [**Descriptive Statistics**](https://github.com/javadho/lattice-design-compression/blob/main/Descriptive%20Statistics.ipynb) file and also for the models' codes in the [**Prediction Models**](https://github.com/javadho/lattice-design-compression/tree/614c1bdcd45b8edd737942777cf30cfd7b110f03/Prediction%20Models) folder:
 
 `pip install pandas seaborn matplotlib scipy scikit-learn nump`
+
+For implementing th [**Graphical User Interface (GUI)**](https://github.com/javadho/lattice-design-compression/tree/614c1bdcd45b8edd737942777cf30cfd7b110f03/GUI) codes, you need to install additional packages as well. Run the following command:
+
+`pip pillow`
 
 ## Data Sources
 The dataset has not been publicly released yet. I will upload it once it becomes accessible to everyone. However, you can see a portion of the raw dataset below for reference.
