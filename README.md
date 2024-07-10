@@ -60,3 +60,6 @@ The RandomForestRegressor function was employed, with MSE and R<sup>2</sup> bein
 
 ## Results and Evaluation
 The selected metrics include R<sup>2</sup>, MSE, RMSE, and MAE. The RF algorithm significantly outperforms the ANN model. RF accounts for 79% of the variability in the target variable (R<sup>2</sup>), whereas ANN only explains 24%. Additionally, the MSE, RMSE, and MAE comparisons highlight RF's superior performance, with its predictions closely aligning with the actual values compared to ANN's results. This is also evident in the residual plots of these machine learning models.
+
+### GUI
+In order to make the model interactive for everyone, I used Tkinter as a GUI. 
