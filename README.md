@@ -50,4 +50,4 @@ The dataset was initially analyzed using [**Descriptive Statistics**](https://gi
 
 ### Prediction Models
 
-
+For this project, I utilized two ML techniques, ANN and RF, on the dataset.
