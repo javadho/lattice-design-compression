@@ -18,13 +18,14 @@ This project utilizes lattice structures, a type of cellular material, to achiev
    - **Independent Variables:** Lattice Type, Force applied, Strain
    - **Dependent Variables:** X, Y, Z dimensions, Cell Wall Thickness
 
-The project's objective is to develop a machine learning model that can predict the optimal unit cell dimensions (X, Y, Z, and thickness) based on the applied force, strain, and chosen lattice type.
+The project aims to develop a machine learning model that can predict the optimal unit cell dimensions (X, Y, Z, and thickness) based on the applied force, strain, and chosen lattice type.
 
 ## Installation
 ### Software Requirement
 The codes were written with JupyterNotebook IPython 7.31.1 environment and Python programming language version 3.9.13. They were executed on a system setup comprising an 11th Generation Intel® Core™ i5 CPU with four cores and a clock speed of 2.40 GHz, together with 8.00 GB of RAM, operating on the Microsoft Windows 11 Home OS.
 
-For implementing the code and obtaining the models, you need to install the necessary packages. Run the following command:
+To implement the code and obtain the models for this project, you need to install the necessary packages. Initially, descriptive statistics were implemented to understand the dataset and determine methods for achieving better modeling results. To begin, install the required packages by running the following command:
+
 `pip install pandas scipy scikit-learn matplotlib`
 
 ## Data Sources
