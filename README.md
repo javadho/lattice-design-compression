@@ -53,6 +53,10 @@ The dataset was initially analyzed using [**Descriptive Statistics**](https://gi
 To find the best models, categorical variables were converted to numeric using a label encoder, and the data was split into training and testing sets. Two machine learning techniques, Artificial Neural Networks (ANN) and Random Forest (RF), were utilized on the dataset.
 
 **1. ANN**
-I employed TensorFlow and Keras frameworks to construct a neural network model and conducted hyperparameter optimization through Grid SearchCV with tuning Learning Rate, Activation Function, Batch Size, and Number of Epochs, and also, the number of folds for Cross-Validation was equal to 5.
+I employed TensorFlow and Keras frameworks to construct a neural network model and conducted hyperparameter optimization through Grid SearchCV with tuning Learning Rate, Activation Function, Batch Size, and Number of Epochs. The number of folds for Cross-Validation was set to 5.
+
 **2. RF**
-The RandomForestRegressor function was employed, with MSE and R^2^ being utilized as evaluation metrics. Hyperparameter tuning was conducted using Grid Search with 5-fold CV by tuning Maximum Depth and Number of Trees.
+The RandomForestRegressor function was employed, with MSE and R<sup>2</sup> being utilized as evaluation metrics. Hyperparameter tuning was conducted using Grid Search with 5-fold CV by tuning Maximum Depth and Number of Trees.
+
+## Results and Evaluation
+The selected metrics include R<sup>2</sup>, MSE, RMSE, and MAE. The RF algorithm significantly outperforms the ANN model. RF accounts for 79% of the variability in the target variable (R<sup>2</sup>), whereas ANN only explains 24%. Additionally, the MSE, RMSE, and MAE comparisons highlight RF's superior performance, with its predictions closely aligning with the actual values compared to ANN's results. This is also evident in the residual plots of these machine learning models.
