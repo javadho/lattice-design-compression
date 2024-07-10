@@ -50,7 +50,7 @@ The dataset was initially analyzed using [**Descriptive Statistics**](https://gi
 
 ### Prediction Models
 
-To find the best models, categorical variables were converted to numeric using a label encoder, and the data was split into training and testing sets. Two machine learning techniques, Artificial Neural Networks (ANN) and Random Forest (RF), were utilized on the dataset.
+To find the best models, categorical variables were converted to numeric using a label encoder, and the data was split into training and testing sets. Two machine learning techniques, Artificial Neural Networks (ANN) and Random Forest (RF), were utilized on the dataset, and their codes can be found in the [**Prediction Models**](https://github.com/javadho/lattice-design-compression/tree/614c1bdcd45b8edd737942777cf30cfd7b110f03/Prediction%20Models) folder.
 
 **1. ANN**
 I employed TensorFlow and Keras frameworks to construct a neural network model and conducted hyperparameter optimization through Grid SearchCV with tuning Learning Rate, Activation Function, Batch Size, and Number of Epochs. The number of folds for Cross-Validation was set to 5.
