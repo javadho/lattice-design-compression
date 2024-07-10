@@ -50,4 +50,9 @@ The dataset was initially analyzed using [**Descriptive Statistics**](https://gi
 
 ### Prediction Models
 
-For this project, I utilized two ML techniques, ANN and RF, on the dataset.
+To find the best models, categorical variables were converted to numeric using a label encoder, and the data was split into training and testing sets. Two machine learning techniques, Artificial Neural Networks (ANN) and Random Forest (RF), were utilized on the dataset.
+
+**1. ANN**
+I employed TensorFlow and Keras frameworks to construct a neural network model and conducted hyperparameter optimization through Grid SearchCV with tuning Learning Rate, Activation Function, Batch Size, and Number of Epochs, and also, the number of folds for Cross-Validation was equal to 5.
+**2. RF**
+The RandomForestRegressor function was employed, with MSE and R^2^ being utilized as evaluation metrics. Hyperparameter tuning was conducted using Grid Search with 5-fold CV by tuning Maximum Depth and Number of Trees.
