@@ -1,12 +1,39 @@
 # lattice-design-compression
 Predicting the design of 5 TPMS lattice structures using compression tests
 
-I, Javadhoo, worked on this project during my master's thesis titled *Machine Learning Assisted Design of UV Curable Resin-based Lattice Structures for Additive Manufacturing* at the University of Regina. I'll first describe the problem I encountered and how I gathered the data. Then, I'll explain the methods I used to develop the prediction model.
+I worked on this project during my master's thesis titled *Machine Learning Assisted Design of UV Curable Resin-based Lattice Structures for Additive Manufacturing* at the University of Regina. I'll first describe the problem I encountered and how I gathered the data. Then, I'll explain the methods I used to develop the prediction model.
 
-## Problem Statement
+## Project Description
+This project investigates the use of machine learning to optimize the design of polymeric foams with improved mechanical properties for applications requiring deformation such as mattresses, shoe insoles, military helmets, and so on. Traditional polymeric foams, while widely used, suffer from limitations in their cell structure design.
 
-Polymeric foams are widely used in many industries because of their excellent qualities. Compressing these foams is important for making products lighter, so it's crucial to optimize how they deform for each use. However, designing the cell structures of foams has been a challenge. Recently, this issue was addressed by using lattice structures instead. These lattice structures can improve mechanical properties and open up new uses, especially in products needing a lot of deformation, like mattresses, shoe insole, military helmets, and so on.
+This project utilizes lattice structures, a type of cellular material, to achieve superior mechanical performance. The project focuses on:
 
-## Data Preparation
+1. **Lattice Design:**  93 unique lattice unit cells were designed using five key parameters:
+   - **Lattice Type:** Gyroid, Schwarz, Diamond, Lindinoid, SplitP
+   - **Cell Dimensions:** X, Y, and Z-axis lengths
+   - **Cell Wall Thickness**
+2. **Fabrication:**  The designed lattice structures were fabricated using resin 3D printing.
+3. **Mechanical Testing:**  Compression tests were conducted on the samples up to 50% height reduction, following the ASTM D3574-17 standard to generate stress-strain data.
+4. **Data Collection:**  The testing process resulted in 76,761 observations with seven variables:
+   - **Independent Variables:** Lattice Type, Force applied, Strain
+   - **Dependent Variables:** X, Y, Z dimensions, Cell Wall Thickness
 
-Using real-world data for machine learning has benefits, even though it requires time and money. It captures the complexity and variety of actual data and handles unknown variables, making models more robust. At first, the lattice structures were created by designing and slicing, then fabricating them with a resin 3D printer. Compression tests were conducted next to generate stress-strain curves for each sample and to get the values of forces and their corresponding displacements.
+The project's objective is to develop a machine learning model that can predict the optimal unit cell dimensions (X, Y, Z, and thickness) based on the applied force, strain, and chosen lattice type.
+
+## Installation
+### Software Requirement
+The codes were written with JupyterNotebook IPython 7.31.1 environment and Python programming language version 3.9.13. They were executed on a system setup comprising an 11th Generation Intel® Core™ i5 CPU with four cores and a clock speed of 2.40 GHz, together with 8.00 GB of RAM, operating on the Microsoft Windows 11 Home OS.
+
+For implementing the code and obtaining the models, you need to install the necessary packages. Run the following command:
+`pip install pandas scipy scikit-learn matplotlib`
+
+## Data Sources
+The dataset has not been publicly released yet. I will upload it once it becomes accessible to everyone. However, you can see a portion of the raw dataset below for reference.
+
+|Lattice Type |      X(mm)  |      Y(mm)  |  Z(mm)      |Thickness(mm)| Force(N)    | Strain(mm)  |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| SplitP      | 10.0        |      8.7    |      9.5    |      1.1    |      0.219  |      0.0001 | 
+| SplitP      | 10.0        |      8.7    |      9.5    |      1.1    |      0.2675 |      0.0023 | 
+| ...         | ...         |      ...    |      ...    |      ...    |      ...    |      ...    | 
+| Gyroid      | 8.5         |      6.4    |      9.1    |      1.8    |    1068.057 |     14.4929 | 
+| Gyroid      | 8.5         |      6.4    |      9.1    |      1.8    |    1068.731 |     14.5004 | 
