@@ -44,16 +44,18 @@ The dataset has not been publicly released yet. I will upload it once it becomes
 ## Codes Structure
 
 ### EDA
-The dataset was initially analyzed using [**EDA**](https://github.com/javadho/lattice-design-compression/blob/main/Descriptive%20Statistics.ipynb) to understand its structure and key characteristics. This included summarizing the data, checking for missing values, and generating summary statistics. Visualizations such as histograms, box plots, scatter plots, and correlation heatmaps were created to examine distributions, relationships, and potential outliers. Rank-Based Inverse Normal (RIN) transformation was used to normalize numerical variables. The scatter plots and correlation heatmaps revealed slight correlations between force and Z, and a strong link between force and thickness, and force and strain. The box plots indicated that the lattice type variable is mostly independent of other variables, though there may be a very low relationship between lattice type and thickness.
+The dataset was initially analyzed using [**EDA**](https://github.com/javadho/lattice-design-compression/blob/main/Descriptive%20Statistics.ipynb) to understand its structure and key characteristics. This included summarizing the data, checking for missing values, and generating summary statistics. Visualizations such as histograms, box plots, scatter plots, and correlation heatmaps were created to examine distributions, relationships, and potential outliers. Rank-Based Inverse Normal (RIN) transformation was used to normalize numerical variables.
+
+The scatter plots and correlation heatmaps revealed slight correlations between force and Z, and a strong link between force and thickness, and force and strain. The box plots indicated that the lattice type variable is mostly independent of other variables, though there may be a very low relationship between lattice type and thickness.
 
 ### Prediction Models
 
 To find the best models, categorical variables were converted to numeric using a label encoder, and the data was split into training and testing sets. Two machine learning techniques, Artificial Neural Networks (ANN) and Random Forest (RF), were utilized on the dataset, and their codes can be found in the [**Prediction Models**](https://github.com/javadho/lattice-design-compression/tree/614c1bdcd45b8edd737942777cf30cfd7b110f03/Prediction%20Models) folder.
 
-**1. ANN**
+**1. ANN:**
 I employed TensorFlow and Keras frameworks to construct a neural network model and conducted hyperparameter optimization through Grid SearchCV with tuning Learning Rate, Activation Function, Batch Size, and Number of Epochs. The number of folds for Cross-Validation was set to 5.
 
-**2. RF**
+**2. RF:**
 The RandomForestRegressor function was employed, with MSE and R<sup>2</sup> being utilized as evaluation metrics. Hyperparameter tuning was conducted using Grid Search with 5-fold CV by tuning Maximum Depth and Number of Trees.
 
 ## Results and Evaluation
