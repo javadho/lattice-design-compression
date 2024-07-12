@@ -64,7 +64,11 @@ The selected metrics include R<sup>2</sup>, MSE, RMSE, and MAE. The RF algorithm
 ### GUI
 To make the model interactive, I used Tkinter for the GUI. In its code [**(RF_Model)**](https://github.com/javadho/lattice-design-compression/blob/a064b0afedf13e4377ad4b9edc7ee44547fed1b4/GUI/GUI_RF%20Model.ipynb), users can select from five lattice types (Diamond, Gyroid, Lidinoid, SplitP, and Schwarz) via a dropdown menu, revealing the corresponding cell shape. They can also input values for force and strain, with constraints visible by clicking the help button next to the force field. The RF model limits the strain range to 0-14.5 mm and sets a threshold of 600 Newton for force. Exceeding these ranges results in an error. By entering valid values and clicking predict, users can determine the X, Y, Z dimensions, and thickness of their lattice unit cell size.
 
+![](https://github.com/javadho/lattice-design-compression/blob/main/RF%20Model.gif)
+
 Additionally, I created a GUI for a specific application: designing lattice structures with different zones which is called Functionally Graded Lattices (FGL), each having distinct lattice designs. In the [**RF Model_FGL**](https://github.com/javadho/lattice-design-compression/blob/a064b0afedf13e4377ad4b9edc7ee44547fed1b4/GUI/GUI_RF%20Model_FGL.ipynb), users can specify the force and strain for the first and last zones and the number of intermediate zones. The GUI will then provide the values for X, Y, Z, and thickness for each zone, enabling a gradual and linear transition in lattice design.
+
+![](https://github.com/javadho/lattice-design-compression/blob/main/RF%20Model_FGL.gif)
 
 ## Challenges
 During this project, I encountered several challenges in predicting models. With 93 samples undergoing compression tests, each yielding around 760 force and strain values, there were multiple values for the same lattice type, X, Y, Z, and Thickness. Additionally, the initial force values for all samples were very similar. These factors complicated model prediction, making it difficult to use appropriate methods.
