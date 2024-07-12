@@ -1,6 +1,4 @@
 # lattice-design-compression
-Predicting the design of 5 TPMS lattice structures using compression tests
-
 I worked on this project during my master's thesis titled *Machine Learning Assisted Design of UV Curable Resin-based Lattice Structures for Additive Manufacturing* at the University of Regina. I'll first describe the problem I encountered and how I gathered the data. Then, I'll explain the methods I used to develop the prediction model.
 
 ## Project Description
