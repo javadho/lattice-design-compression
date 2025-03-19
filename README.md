@@ -75,6 +75,9 @@ During this project, I encountered several challenges in predicting models. With
 
 I considered adopting the Multiple Instance Regression (MIR) method, which suggests multiple bags containing several instances, closely resembling the dataset's structure. The collective assumption, where each instance's contribution to the targets is considered equal, aligns with this dataset. One approach was to calculate the mean force for each sample. However, the varying number of forces across samples and differences in failed samples could skew the results, rendering this method impractical.
 
+## Publication
+This research has been published in the 3D Printing and Additive Manufacturing journal on February 27, 2025. You can access the paper here: [https://doi.org/10.1089/3dp.2024.0130]. If you're unable to download it, feel free to contact me!
+
 ## Acknowledgments
 
 I extend my deepest appreciation to [**Dr. Mohammad Khondoker**](https://www.linkedin.com/in/mahkhondoker?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B4wZ2dApeSrKGZjZsPtEGOg%3D%3D) for his remarkable guidance and support throughout this project at the University of Regina.
