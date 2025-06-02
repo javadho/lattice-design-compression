@@ -22,7 +22,7 @@ The project aims to develop a machine learning model that can predict the optima
 ### Software Requirement
 The codes were written with JupyterNotebook IPython 7.31.1 environment and Python programming language version 3.9.13. They were executed on a system setup comprising an 11th Generation Intel® Core™ i5 CPU with four cores and a clock speed of 2.40 GHz, together with 8.00 GB of RAM, operating on the Microsoft Windows 11 Home OS.
 
-To implement the code and obtain the models for this project, ensure you have installed the necessary packages. Initially, Exploratory Data Analysis (EDA) were implemented to understand the dataset and determine methods for achieving better modeling results. To begin, install the required packages by running the following command for the [**EDA**](https://github.com/javadho/lattice-design-compression/blob/main/Descriptive%20Statistics.ipynb) file and also for the models' codes in the [**Prediction Models**](https://github.com/javadho/lattice-design-compression/tree/614c1bdcd45b8edd737942777cf30cfd7b110f03/Prediction%20Models) folder:
+To implement the code and obtain the models for this project, ensure you have installed the necessary packages. Initially, Exploratory Data Analysis (EDA) were implemented to understand the dataset and determine methods for achieving better modeling results. To begin, install the required packages by running the following command for the [**EDA**](https://github.com/javadho/lattice-design-compression/blob/main/Exploratory%20Data%20Analysis.ipynb) file and also for the models' codes in the [**Prediction Models**](https://github.com/javadho/lattice-design-compression/tree/614c1bdcd45b8edd737942777cf30cfd7b110f03/Prediction%20Models) folder:
 
 `pip install pandas seaborn matplotlib scipy scikit-learn nump`
 
@@ -43,8 +43,8 @@ The dataset has not been publicly released yet. I will upload it once it becomes
 
 ## Codes Structure
 
-### EDA
-The dataset was initially analyzed using [**EDA**](https://github.com/javadho/lattice-design-compression/blob/main/Descriptive%20Statistics.ipynb) to understand its structure and key characteristics. This included summarizing the data, checking for missing values, and generating summary statistics. Visualizations such as histograms, box plots, scatter plots, and correlation heatmaps were created to examine distributions, relationships, and potential outliers. Rank-Based Inverse Normal (RIN) transformation was used to normalize numerical variables.
+### 
+The dataset was initially analyzed using [**EDA**](https://github.com/javadho/lattice-design-compression/blob/main/Exploratory%20Data%20Analysis.ipynb) to understand its structure and key characteristics. This included summarizing the data, checking for missing values, and generating summary statistics. Visualizations such as histograms, box plots, scatter plots, and correlation heatmaps were created to examine distributions, relationships, and potential outliers. Rank-Based Inverse Normal (RIN) transformation was used to normalize numerical variables.
 
 The scatter plots and correlation heatmaps revealed slight correlations between force and Z, and a strong link between force and thickness, and force and strain. The box plots indicated that the lattice type variable is mostly independent of other variables, though there may be a very low relationship between lattice type and thickness.
 
